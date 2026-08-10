@@ -135,4 +135,374 @@
       <a href="#inicio">Inicio</a> · 
       <a href="#quienes">Quiénes Somos</a> · 
       <a href="#servicios">Servicios</a> · 
-      <a href="#sectores">Sectores</a> ·
+      <a href="#sectores">Sectores</a> ·<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="NG Servicio de Limpieza, liderado por Nilda González, ofrece limpieza residencial, comercial, post-construcción y para bancos en Buenos Aires con atención profesional, puntualidad y soluciones eco-amigables.">
+  <meta name="keywords" content="limpieza profesional, servicio de limpieza, limpieza en Buenos Aires, limpieza residencial, limpieza comercial, limpieza post-construcción, limpieza para bancos">
+  <meta name="author" content="NG Servicio de Limpieza">
+  <meta name="theme-color" content="#2b8a3e">
+  <link rel="canonical" href="https://www.nildagonzalez2912.com/">
+  <meta property="og:title" content="NG Servicio de Limpieza - Nilda González">
+  <meta property="og:description" content="NG Servicio de Limpieza brinda limpieza profesional en Buenos Aires para hogares, comercios, obras y entidades financieras, con personal confiable y enfoque en detalles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nildagonzalez2912.com/">
+  <meta property="og:site_name" content="NG Servicio de Limpieza">
+  <title>NG Servicio de Limpieza - Nilda González | Limpieza profesional en Buenos Aires</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+    a {
+      color: inherit;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    a:hover {
+      color: #2b8a3e;
+      transform: translateY(-1px);
+    }
+    header {
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 18px 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    nav {
+      margin-top: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    .social-icons img {
+      width: 28px;
+      margin: 0 6px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .hero-subtitle {
+      max-width: 720px;
+      margin: 8px auto 0;
+      font-size: 1rem;
+      line-height: 1.7;
+      opacity: 0.92;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #111;
+    }
+    .section-text {
+      max-width: 760px;
+      margin: 0 auto 32px;
+      color: #444;
+    }
+    .feature-list {
+      display: grid;
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 0;
+      list-style: none;
+    }
+    .feature-list li {
+      background: white;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .feature-list li strong {
+      color: #2b8a3e;
+    }
+    .section-highlight {
+      background: #eef8ee;
+      border-left: 4px solid #2b8a3e;
+      color: #333;
+      padding: 20px 20px 20px 18px;
+      max-width: 920px;
+      margin: 0 auto 32px;
+      text-align: left;
+      border-radius: 8px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      overflow: hidden;
+      margin-top: 80px;
+    }
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 20s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% {margin-left: 0;}
+      20% {margin-left: 0;}
+      25% {margin-left: -100%;}
+      45% {margin-left: -100%;}
+      50% {margin-left: -200%;}
+      70% {margin-left: -200%;}
+      75% {margin-left: -300%;}
+      95% {margin-left: -300%;}
+      100% {margin-left: -400%;}
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      max-height: 360px;
+      margin: 15px 0;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      flex: 1 1 280px;
+      max-width: 340px;
+      text-align: left;
+    }
+    .service-card h3 {margin-top:0}
+    .muted {color:#666;font-size:0.95rem}
+    .cta {
+      display:inline-block;
+      background:#2b8a3e;color:white;padding:10px 14px;border-radius:6px;text-decoration:none;margin-top:8px;
+    }
+    .cta:hover {
+      background:#236f2e;
+    }
+    footer {
+      background: #272727;
+      color: white;
+      text-align: center;
+      padding: 28px 16px;
+    }
+    .footer-note {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin: 10px 0 0;
+    }
+    footer .social-icons img {
+      width: 24px;
+      margin: 0 6px;
+      vertical-align:middle;
+    }
+    @media (max-width:800px){
+      .slides img{height:45vh}
+      header p{display:none}
+      nav a{margin:0 6px;font-size:0.9rem}
+      .service-card{flex:1 1 100%}
+    }
+    @media (max-width:600px){
+      header {padding: 16px 10px;}
+      .hero-subtitle {font-size: 0.95rem;}
+      .section-title {font-size: 1.7rem;}
+      .slider {height: 45vh;}
+      .slides img {height: 45vh;}
+      .feature-list {grid-template-columns: 1fr;}
+      section {padding: 45px 16px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>NG Servicio de Limpieza</h1>
+    <p class="hero-subtitle">Atención profesional para hogares y empresas en Buenos Aires, con compromiso, confianza y limpieza impecable.</p>
+    <nav>
+      <a href="#quienes">Quiénes Somos</a>
+      <a href="#elegirnos">Por qué Elegirnos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <span class="social-icons">
+        <a href="https://wa.me/5491168519680" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://www.facebook.com/profile.php?id=61591076374105" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ngserviciodelimpieza2024/?hl=es" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@nildagonzalez2912" target="_blank"><img src="tiktok.jpg" alt="TikTok"></a>
+        <a href="mailto:NGSERVICIODELIMPIEZA2024@gmail.com"><img src="gmail.jpg" alt="Gmail"></a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<div class="slider">
+  <div class="slides">
+    <img src="limpieza1.jpg" alt="Limpieza 1">
+    <img src="limpieza2.jpg" alt="Limpieza 2">
+    <img src="limpieza3.jpg" alt="Limpieza 3">
+    <img src="limpieza4.jpg" alt="Limpieza 4">
+    <img src="limpieza5.jpg" alt="Limpieza 5">
+  </div>
+</div>
+
+<section id="quienes">
+  <div class="container">
+    <h2 class="section-title">Quiénes Somos</h2>
+    <p class="section-text">Fundada hace más de 3 años por Nilda González, NG Servicio de Limpieza crece sobre la base de valores sólidos y un compromiso inquebrantable con la calidad. Atendemos hogares y empresas con procesos claros, personal capacitado y resultados que transmiten seguridad.</p>
+  </div>
+</section>
+
+<section id="elegirnos">
+  <div class="container">
+    <h2 class="section-title">Por qué Elegirnos</h2>
+    <p class="section-text">Nuestra propuesta combina puntualidad, atención personalizada y protocolos responsables. Elegir NG Servicio de Limpieza significa recibir una atención confiable que cuida tu espacio con detalle y respeto.</p>
+    <div class="section-highlight">
+      <strong>Beneficios para tu hogar o negocio en Buenos Aires:</strong>
+      <ul class="feature-list">
+        <li><strong>Atención personalizada</strong> y planificación según tus horarios.</li>
+        <li><strong>Productos eco-amigables</strong> para un servicio seguro.</li>
+        <li><strong>Personal de confianza</strong> entrenado para cumplir altos estándares.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <h2>Servicios</h2>
+    <p class="muted">Ofrecemos una gama completa de servicios adaptados a hogares y empresas. Trabajamos con productos eco-amigables y métodos profesionales.</p>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Limpieza Residencial</h3>
+        <img src="residencial.jpg" alt="Limpieza Residencial">
+        <p class="muted">Servicio para casas y departamentos: limpieza profunda, mantenimiento periódico y organización ligera.</p>
+        <a class="cta" href="mailto:NGSERVICIODELIMPIEZA2024@gmail.com">Pedir presupuesto</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Limpieza Comercial</h3>
+        <img src="comercial.jpg" alt="Limpieza Comercial">
+        <p class="muted">Limpieza de oficinas y locales: horarios flexibles, personal capacitado y atención a detalles operativos.</p>
+        <a class="cta" href="#contacto">Contactar</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Limpieza Post-Construcción</h3>
+        <img src="postconstruccion.jpg" alt="Limpieza Post-Construcción">
+        <p class="muted">Removemos residuos de obra y polvo fino para entregar un espacio listo para uso.</p>
+        <a class="cta" href="#contacto">Solicitar visita</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Servicios para Bancos y Entidades</h3>
+        <img src="bancos.jpg" alt="Limpieza en Bancos">
+        <p class="muted">Protocolos de trabajo adaptados a operaciones con exigencias de seguridad y discreción.</p>
+        <a class="cta" href="#contacto">Consultar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="container">
+    <h2>Nuestro proceso</h2>
+    <p class="section-text">Seguimos un flujo claro y profesional: evaluación, planificación, ejecución y control de calidad. Cada servicio se realiza con atención a los detalles que marcan la diferencia.</p>
+    <ol class="feature-list">
+      <li><strong>Evaluación</strong>: visitamos o hablamos por teléfono para entender sus necesidades.</li>
+      <li><strong>Planificación</strong>: proponemos un plan con frecuencia, productos y tiempo estimado.</li>
+      <li><strong>Ejecución</strong>: personal capacitado realiza el trabajo con transparencia.</li>
+      <li><strong>Control de calidad</strong>: verificamos y dejamos un canal de comunicación abierto para su feedback.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <div style="text-align:left;max-width:900px;margin:12px auto;">
+      <p><strong>¿Qué productos usan?</strong> Utilizamos productos profesionales y, si lo deseas, opciones eco-amigables para un servicio responsable.</p>
+      <p><strong>¿Cubre todo Buenos Aires?</strong> Prestamos servicio principalmente en Buenos Aires y alrededores; consultanos para confirmar disponibilidad en tu zona.</p>
+      <p><strong>¿Cómo coordino una visita?</strong> Puedes escribir a nuestro correo o enviar WhatsApp desde los enlaces sociales, y te respondemos rápido.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p class="muted">Estamos disponibles para consultas, presupuestos y coordinaciones. Respondiendo normalmente en menos de 24 horas.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:flex-start;">
+      <div style="max-width:420px;flex:1 1 320px;text-align:left;">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491168519680" target="_blank">+54 9 11 6851 9680</a></p>
+        <p><strong>Email:</strong> <a href="mailto:NGSERVICIODELIMPIEZA2024@gmail.com">NGSERVICIODELIMPIEZA2024@gmail.com</a></p>
+        <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+      </div>
+
+      <div style="max-width:420px;flex:1 1 320px;">
+        <form action="mailto:NGSERVICIODELIMPIEZA2024@gmail.com" method="post" enctype="text/plain">
+          <label>Nombre<br><input type="text" name="Nombre" style="width:100%;padding:8px;margin-top:6px;border:1px solid #ddd;border-radius:4px"></label>
+          <label style="display:block;margin-top:8px">Mensaje<br><textarea name="Mensaje" rows="4" style="width:100%;padding:8px;margin-top:6px;border:1px solid #ddd;border-radius:4px"></textarea></label>
+          <div style="margin-top:8px"><button type="submit" class="cta">Enviar por email</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 NG Servicio de Limpieza - Nilda González</p>
+    <p class="footer-note">Servicio disponible en Buenos Aires con atención profesional, seguridad y satisfacción garantizada.</p>
+    <div class="social-icons" style="margin-top:14px;">
+      <a href="https://wa.me/5491168519680" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+      <a href="https://www.facebook.com/profile.php?id=61591076374105" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/ngserviciodelimpieza2024/?hl=es" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@nildagonzalez2912" target="_blank"><img src="tiktok.jpg" alt="TikTok"></a>
+      <a href="mailto:NGSERVICIODELIMPIEZA2024@gmail.com"><img src="gmail.jpg" alt="Gmail"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
