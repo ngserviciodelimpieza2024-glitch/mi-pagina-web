@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="NG Servicio de Limpieza, liderado por Nilda González, ofrece limpieza residencial, comercial, post-construcción y para bancos en Buenos Aires con atención profesional, puntualidad y soluciones eco-amigables.">
-  <meta name="keywords" content="limpieza profesional, servicio de limpieza, limpieza en Buenos Aires, limpieza residencial, limpieza comercial, limpieza post-construcción, limpieza para bancos">
+  <meta name="description" content="NG Servicio de Limpieza, liderado por Nilda González, ofrece limpieza residencial, comercial, profunda, post-construcción, mantenimiento y servicios especializados en Buenos Aires, con productos ecoamigables y equipo profesional certificado.">
+  <meta name="keywords" content="limpieza profesional, servicio de limpieza, limpieza en Buenos Aires, limpieza residencial, limpieza comercial, limpieza profunda, limpieza post-construcción, limpieza ecoamigable, mantenimiento de oficinas">
   <meta name="author" content="NG Servicio de Limpieza">
   <meta name="theme-color" content="#2b8a3e">
   <link rel="canonical" href="https://www.nildagonzalez2912.com/">
+  <link rel="icon" type="image/jpeg" href="LOGO NG.jpeg">
   <meta property="og:title" content="NG Servicio de Limpieza - Nilda González">
-  <meta property="og:description" content="NG Servicio de Limpieza brinda limpieza profesional en Buenos Aires para hogares, comercios, obras y entidades financieras, con personal confiable y enfoque en detalles.">
+  <meta property="og:description" content="Brillamos para ti, cuidamos tu espacio. Limpieza profesional en Buenos Aires para hogares, comercios, obras y sectores especializados, con personal confiable y productos ecoamigables.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.nildagonzalez2912.com/">
   <meta property="og:site_name" content="NG Servicio de Limpieza">
@@ -55,11 +56,12 @@
       margin-top: 8px;
     }
     nav a {
-      margin: 0 10px;
+      margin: 0 8px;
       text-decoration: none;
       color: white;
       font-weight: bold;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
+      white-space: nowrap;
     }
     .social-icons img {
       width: 28px;
@@ -73,6 +75,12 @@
       font-size: 1rem;
       line-height: 1.7;
       opacity: 0.92;
+    }
+    .hero-tagline {
+      margin: 4px 0 0;
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #7fd996;
     }
     .section-title {
       font-size: 2rem;
@@ -158,6 +166,36 @@
       border-radius: 8px;
       object-fit: cover;
     }
+    /* Chips de valores rápidos (hero) */
+    .value-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 14px auto 0;
+      max-width: 720px;
+    }
+    .value-chips span {
+      background: rgba(43,138,62,0.18);
+      border: 1px solid rgba(127,217,150,0.5);
+      color: #eafbee;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    .hero-ctas {
+      margin-top: 16px;
+    }
+    .hero-ctas .cta {
+      margin: 4px 6px;
+    }
+    .cta-outline {
+      display:inline-block;
+      background:transparent;color:white;border:1px solid white;padding:9px 13px;border-radius:6px;text-decoration:none;margin-top:8px;
+    }
+    .cta-outline:hover {
+      background:rgba(255,255,255,0.1);color:white;
+    }
     .service-grid {
       display: flex;
       flex-wrap: wrap;
@@ -175,6 +213,12 @@
       text-align: left;
     }
     .service-card h3 {margin-top:0}
+    .service-card ul {
+      margin: 8px 0;
+      padding-left: 18px;
+      color: #444;
+      font-size: 0.92rem;
+    }
     .muted {color:#666;font-size:0.95rem}
     .cta {
       display:inline-block;
@@ -183,11 +227,129 @@
     .cta:hover {
       background:#236f2e;
     }
+    /* Quiénes somos: misión / visión / valores / equipo */
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 24px auto 0;
+      text-align: left;
+    }
+    .about-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      flex: 1 1 220px;
+      max-width: 260px;
+      border-top: 4px solid #2b8a3e;
+    }
+    .about-card h3 {
+      margin-top: 0;
+      color: #2b8a3e;
+      font-size: 1.05rem;
+    }
+    .valores-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+      justify-content: center;
+    }
+    .valores-tags span {
+      background: #eef8ee;
+      border: 1px solid #2b8a3e;
+      color: #236f2e;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    /* Modalidades de contratación */
+    .modality-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: 20px auto 0;
+      text-align: left;
+    }
+    .modality-grid div {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .modality-grid strong {
+      color: #2b8a3e;
+      display: block;
+      margin-bottom: 6px;
+    }
+    /* Sectores atendidos */
+    .sector-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .sector-grid span {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: bold;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    /* Testimonios */
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      flex: 1 1 260px;
+      max-width: 300px;
+      text-align: left;
+    }
+    .testimonial-card p {
+      color: #444;
+      font-style: italic;
+    }
+    .testimonial-card .autor {
+      font-style: normal;
+      font-weight: bold;
+      color: #2b8a3e;
+      margin-top: 10px;
+    }
     footer {
       background: #272727;
       color: white;
       text-align: center;
       padding: 28px 16px;
+    }
+    .footer-links {
+      margin: 10px 0;
+    }
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+    .footer-links a:hover {
+      color: #7fd996;
     }
     .footer-note {
       font-size: 0.95rem;
@@ -202,7 +364,7 @@
     @media (max-width:800px){
       .slides img{height:45vh}
       header p{display:none}
-      nav a{margin:0 6px;font-size:0.9rem}
+      nav a{margin:0 5px;font-size:0.85rem}
       .service-card{flex:1 1 100%}
     }
     @media (max-width:600px){
@@ -220,12 +382,18 @@
 
 <header>
   <div class="container">
-    <h1>NG Servicio de Limpieza</h1>
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;">
+      <img src="LOGO NG.jpeg" alt="Logo NG Servicio de Limpieza" style="height:44px;width:44px;border-radius:50%;object-fit:cover;">
+      <h1 style="margin:0;">NG Servicio de Limpieza</h1>
+    </div>
     <p class="hero-subtitle">Atención profesional para hogares y empresas en Buenos Aires, con compromiso, confianza y limpieza impecable.</p>
     <nav>
+      <a href="#inicio">Inicio</a>
       <a href="#quienes">Quiénes Somos</a>
-      <a href="#elegirnos">Por qué Elegirnos</a>
       <a href="#servicios">Servicios</a>
+      <a href="#ecoamigable">Ecoamigable</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#contacto">Cotización</a>
       <a href="#contacto">Contacto</a>
       <span class="social-icons">
         <a href="https://wa.me/5491168519680" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
@@ -238,7 +406,7 @@
   </div>
 </header>
 
-<div class="slider">
+<div class="slider" id="inicio">
   <div class="slides">
     <img src="limpieza1.jpg" alt="Limpieza 1">
     <img src="limpieza2.jpg" alt="Limpieza 2">
@@ -248,23 +416,64 @@
   </div>
 </div>
 
+<section id="hero-cta" style="padding-top:40px;">
+  <div class="container">
+    <p class="hero-tagline">"Brillamos para ti, cuidamos tu espacio."</p>
+    <p class="section-text">Con más de 3 años brindando limpieza de máxima calidad, garantizamos espacios impecables para tu hogar y tu empresa en Buenos Aires.</p>
+    <div class="value-chips" style="margin-bottom:0;">
+      <span>✔ Satisfacción garantizada</span>
+      <span>🌿 Productos ecoamigables</span>
+      <span>👥 Equipo profesional</span>
+      <span>⏱ Flexibilidad y puntualidad</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="cta" href="#contacto">Solicitar cotización</a>
+      <a class="cta-outline" href="#servicios" style="color:#222;border-color:#2b8a3e;">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
 <section id="quienes">
   <div class="container">
     <h2 class="section-title">Quiénes Somos</h2>
     <p class="section-text">Fundada hace más de 3 años por Nilda González, NG Servicio de Limpieza crece sobre la base de valores sólidos y un compromiso inquebrantable con la calidad. Atendemos hogares y empresas con procesos claros, personal capacitado y resultados que transmiten seguridad.</p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Misión</h3>
+        <p class="muted">Brindar servicios de limpieza con profesionalismo y confianza que superen las expectativas de nuestros clientes.</p>
+      </div>
+      <div class="about-card">
+        <h3>Visión</h3>
+        <p class="muted">Ser la opción de referencia en Buenos Aires para servicios de limpieza profesional, sostenibles y confiables.</p>
+      </div>
+      <div class="about-card">
+        <h3>Equipo</h3>
+        <p class="muted">Equipo profesional capacitado, con certificaciones y garantía de servicio de excelencia. Capacitación continua y protocolos de seguridad e higiene.</p>
+      </div>
+    </div>
+
+    <div class="valores-tags">
+      <span>Profesionalismo</span>
+      <span>Confianza</span>
+      <span>Calidad</span>
+      <span>Compromiso</span>
+    </div>
   </div>
 </section>
 
-<section id="elegirnos">
+<section id="elegirnos" style="background:#f3f3f3;">
   <div class="container">
     <h2 class="section-title">Por qué Elegirnos</h2>
     <p class="section-text">Nuestra propuesta combina puntualidad, atención personalizada y protocolos responsables. Elegir NG Servicio de Limpieza significa recibir una atención confiable que cuida tu espacio con detalle y respeto.</p>
     <div class="section-highlight">
-      <strong>Beneficios para tu hogar o negocio en Buenos Aires:</strong>
+      <strong>Garantías y beneficios:</strong>
       <ul class="feature-list">
-        <li><strong>Atención personalizada</strong> y planificación según tus horarios.</li>
-        <li><strong>Productos eco-amigables</strong> para un servicio seguro.</li>
-        <li><strong>Personal de confianza</strong> entrenado para cumplir altos estándares.</li>
+        <li><strong>Satisfacción garantizada</strong> en cada servicio realizado.</li>
+        <li><strong>Equipo profesional y certificado</strong>, con capacitación continua.</li>
+        <li><strong>Productos ecoamigables</strong> para un servicio seguro y responsable.</li>
+        <li><strong>Flexibilidad horaria y puntualidad</strong> según tus necesidades.</li>
+        <li><strong>Planes personalizados</strong> y protocolos de seguridad e higiene.</li>
       </ul>
     </div>
   </div>
@@ -273,41 +482,128 @@
 <section id="servicios">
   <div class="container">
     <h2>Servicios</h2>
-    <p class="muted">Ofrecemos una gama completa de servicios adaptados a hogares y empresas. Trabajamos con productos eco-amigables y métodos profesionales.</p>
+    <p class="muted">Ofrecemos Limpieza Residencial, Comercial, Profunda, Post-construcción, Mantenimiento y Servicios Especializados. Trabajamos con productos eco-amigables y métodos profesionales.</p>
 
     <div class="service-grid">
       <div class="service-card">
         <h3>Limpieza Residencial</h3>
         <img src="residencial.jpg" alt="Limpieza Residencial">
-        <p class="muted">Servicio para casas y departamentos: limpieza profunda, mantenimiento periódico y organización ligera.</p>
+        <p class="muted">Casas y apartamentos: limpieza regular, mantenimiento y cuidado del hogar con productos ecológicos.</p>
+        <ul>
+          <li>Limpieza general de habitaciones, baños y cocina</li>
+          <li>Limpieza profunda por habitaciones</li>
+          <li>Amoblamiento y organización</li>
+          <li>Frecuencia única, semanal, quincenal o mensual</li>
+        </ul>
         <a class="cta" href="mailto:NGSERVICIODELIMPIEZA2024@gmail.com">Pedir presupuesto</a>
       </div>
 
       <div class="service-card">
         <h3>Limpieza Comercial</h3>
         <img src="comercial.jpg" alt="Limpieza Comercial">
-        <p class="muted">Limpieza de oficinas y locales: horarios flexibles, personal capacitado y atención a detalles operativos.</p>
+        <p class="muted">Oficinas, locales comerciales y espacios de trabajo con atención profesional y detallada.</p>
+        <ul>
+          <li>Escritorios, superficies y áreas comunes</li>
+          <li>Aspirado y lavado de alfombras</li>
+          <li>Reposición de suministros</li>
+          <li>Servicio diario, nocturno o programado</li>
+        </ul>
         <a class="cta" href="#contacto">Contactar</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Limpieza Profunda</h3>
+        <img src="limpieza4.jpg" alt="Limpieza Profunda">
+        <p class="muted">Limpieza en profundidad para eliminar suciedad difícil y alcanzar una higiene óptima.</p>
+        <ul>
+          <li>Pulido, encerado y abrillantado de pisos</li>
+          <li>Desincrustado de manchas y rincones difíciles</li>
+          <li>Recuperación de acabados y tapicerías</li>
+        </ul>
+        <a class="cta" href="#contacto">Consultar</a>
       </div>
 
       <div class="service-card">
         <h3>Limpieza Post-Construcción</h3>
         <img src="postconstruccion.jpg" alt="Limpieza Post-Construcción">
         <p class="muted">Removemos residuos de obra y polvo fino para entregar un espacio listo para uso.</p>
+        <ul>
+          <li>Retiro de polvo fino y residuos de obra</li>
+          <li>Limpieza de vidrios, marcos y superficies</li>
+          <li>Terminaciones y retoques estéticos</li>
+        </ul>
         <a class="cta" href="#contacto">Solicitar visita</a>
       </div>
 
       <div class="service-card">
-        <h3>Servicios para Bancos y Entidades</h3>
-        <img src="bancos.jpg" alt="Limpieza en Bancos">
-        <p class="muted">Protocolos de trabajo adaptados a operaciones con exigencias de seguridad y discreción.</p>
+        <h3>Mantenimiento</h3>
+        <img src="limpieza5.jpg" alt="Mantenimiento">
+        <p class="muted">Servicios continuos para conservar la limpieza y el orden en tus instalaciones.</p>
+        <ul>
+          <li>Programas diarios, semanales, quincenales o mensuales</li>
+          <li>Áreas comunes, estacionamientos y exteriores</li>
+          <li>Control y reposición de insumos</li>
+        </ul>
+        <a class="cta" href="#contacto">Consultar plan</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Servicios Especializados</h3>
+        <img src="bancos.jpg" alt="Servicios Especializados">
+        <p class="muted">Soluciones avanzadas para necesidades puntuales o técnicas, incluyendo bancos y entidades.</p>
+        <ul>
+          <li>Sanitización y desinfección de clínicas</li>
+          <li>Limpieza de equipos de computación</li>
+          <li>Desengrasado de cocinas industriales</li>
+          <li>Fachadas, cortinas y persianas</li>
+        </ul>
         <a class="cta" href="#contacto">Consultar</a>
       </div>
+    </div>
+
+    <h3 style="margin-top:48px;">Modalidades de contratación</h3>
+    <div class="modality-grid">
+      <div><strong>Servicios Puntuales</strong>Eventos, entregas de obra, emergencias, limpiezas previas a mudanzas.</div>
+      <div><strong>Servicios Parciales</strong>Alcance limitado en tiempo o áreas: diarios, semanales o quincenales.</div>
+      <div><strong>Servicios Permanentes</strong>Personal asignado y horarios regulares para mantenimiento continuo.</div>
+      <div><strong>Servicios Exclusivos</strong>Proyectos VIP, eventos de alto perfil y grandes instalaciones.</div>
     </div>
   </div>
 </section>
 
-<section id="proceso">
+<section id="ecoamigable" style="background:#eef8ee;">
+  <div class="container">
+    <h2 class="section-title">Ecoamigable</h2>
+    <p class="section-text">Promovemos prácticas que minimizan el impacto ambiental y protegen la salud de las personas. La limpieza ecoamigable abarca desde la selección de productos biodegradables hasta técnicas que reducen el consumo de recursos naturales y la generación de residuos.</p>
+    <ul class="feature-list">
+      <li><strong>Productos biodegradables</strong> en cada servicio.</li>
+      <li><strong>Reciclaje y separación</strong> de residuos.</li>
+      <li><strong>Uso eficiente</strong> de agua y energía.</li>
+      <li><strong>Reducción de emisiones</strong> y contaminantes.</li>
+      <li><strong>Educación ambiental</strong> continua para nuestro personal.</li>
+      <li><strong>Tecnología verde</strong>: limpieza a vapor y control de consumo.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="sectores">
+  <div class="container">
+    <h2 class="section-title">Sectores Atendidos</h2>
+    <p class="section-text">Brindamos soluciones de limpieza adaptadas a distintos rubros y necesidades.</p>
+    <div class="sector-grid">
+      <span>Oficinas</span>
+      <span>Industria</span>
+      <span>Construcción</span>
+      <span>Salud (clínicas y hospitales)</span>
+      <span>Colegios e instituciones</span>
+      <span>Hotelería</span>
+      <span>Grandes superficies comerciales</span>
+      <span>Espacios públicos y parques</span>
+    </div>
+  </div>
+</section>
+
+<section id="proceso" style="background:#f3f3f3;">
   <div class="container">
     <h2>Nuestro proceso</h2>
     <p class="section-text">Seguimos un flujo claro y profesional: evaluación, planificación, ejecución y control de calidad. Cada servicio se realiza con atención a los detalles que marcan la diferencia.</p>
@@ -320,26 +616,49 @@
   </div>
 </section>
 
-<section id="faq">
+<section id="testimonios">
+  <div class="container">
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"Contraté el servicio de limpieza profunda para mi departamento y quedó impecable. Muy puntuales y prolijos."</p>
+        <p class="autor">— Marcela R., González Catán</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"Usamos NG para el mantenimiento de nuestra oficina desde hace meses. Siempre cumplen los horarios y son de mucha confianza."</p>
+        <p class="autor">— Fernando D., dueño de PyME</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"La limpieza post-obra fue excelente, dejaron todo listo para entregar el departamento sin una mota de polvo."</p>
+        <p class="autor">— Lucía P., Buenos Aires</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:#f3f3f3;">
   <div class="container">
     <h2 class="section-title">Preguntas frecuentes</h2>
     <div style="text-align:left;max-width:900px;margin:12px auto;">
-      <p><strong>¿Qué productos usan?</strong> Utilizamos productos profesionales y, si lo deseas, opciones eco-amigables para un servicio responsable.</p>
+      <p><strong>¿Qué incluye una limpieza profunda?</strong> Incluye tratamiento de suelos especiales, desincrustado de manchas, limpieza de rincones difíciles y recuperación de acabados y tapicerías.</p>
+      <p><strong>¿Qué productos usan?</strong> Utilizamos productos profesionales y ecoamigables, biodegradables y seguros para tu hogar o negocio.</p>
       <p><strong>¿Cubre todo Buenos Aires?</strong> Prestamos servicio principalmente en Buenos Aires y alrededores; consultanos para confirmar disponibilidad en tu zona.</p>
-      <p><strong>¿Cómo coordino una visita?</strong> Puedes escribir a nuestro correo o enviar WhatsApp desde los enlaces sociales, y te respondemos rápido.</p>
+      <p><strong>¿Ofrecen servicio los fines de semana?</strong> Sí, coordinamos horarios flexibles, incluidos fines de semana, según la modalidad contratada.</p>
+      <p><strong>¿Tienen seguro y certificaciones?</strong> Nuestro equipo cuenta con capacitación continua y protocolos de seguridad e higiene.</p>
+      <p><strong>¿Cómo solicito una cotización?</strong> Escribinos por WhatsApp o completá el formulario de contacto y te respondemos en menos de 24 horas.</p>
     </div>
   </div>
 </section>
 
 <section id="contacto">
   <div class="container">
-    <h2>Contacto</h2>
+    <h2>Contacto y Cotizaciones</h2>
     <p class="muted">Estamos disponibles para consultas, presupuestos y coordinaciones. Respondiendo normalmente en menos de 24 horas.</p>
     <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:flex-start;">
       <div style="max-width:420px;flex:1 1 320px;text-align:left;">
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491168519680" target="_blank">+54 9 11 6851 9680</a></p>
         <p><strong>Email:</strong> <a href="mailto:NGSERVICIODELIMPIEZA2024@gmail.com">NGSERVICIODELIMPIEZA2024@gmail.com</a></p>
-        <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+        <p><strong>Ubicación:</strong> Buenos Aires, Argentina (González Catán)</p>
       </div>
 
       <div style="max-width:420px;flex:1 1 320px;">
@@ -356,6 +675,12 @@
 <footer>
   <div class="container">
     <p>&copy; 2026 NG Servicio de Limpieza - Nilda González</p>
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#ecoamigable">Ecoamigable</a>
+      <a href="#contacto">Contacto</a>
+    </div>
     <p class="footer-note">Servicio disponible en Buenos Aires con atención profesional, seguridad y satisfacción garantizada.</p>
     <div class="social-icons" style="margin-top:14px;">
       <a href="https://wa.me/5491168519680" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
